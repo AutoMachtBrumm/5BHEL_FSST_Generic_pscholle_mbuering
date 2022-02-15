@@ -14,5 +14,7 @@ public class Main {
 
         tree.printAll();
 
+        System.out.println(tree.root);
+
     }
 }
