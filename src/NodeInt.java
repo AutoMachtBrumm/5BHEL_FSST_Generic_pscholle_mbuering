@@ -36,5 +36,12 @@ public class NodeInt {
         }
     }
 
-
+    @Override
+    public String toString() {
+        return "NodeInt{" +
+                "data=" + data +
+                ", left=" + left +
+                ", right=" + right +
+                '}';
+    }
 }
