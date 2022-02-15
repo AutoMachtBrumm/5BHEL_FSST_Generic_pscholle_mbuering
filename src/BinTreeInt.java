@@ -1,5 +1,7 @@
 public class BinTreeInt {
 
+    NodeInt root;
+
     public void add(){
 
     }
