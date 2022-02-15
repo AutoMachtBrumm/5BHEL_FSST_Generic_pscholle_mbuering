@@ -1,28 +1,29 @@
 public class Main {
     public static void main(String[] args){
 
-        BinTree<Integer> tree = new BinTree<Integer>();
+        // BinTree<Integer> tree = new BinTree<Integer>();
+        BinTreeInt treeInt = new BinTreeInt();
 
-        tree.add(10);
-        tree.add(5);
-        tree.add(18);
-        tree.add(2);
-        tree.add(7);
-        tree.add(24);
-        tree.add(15);
-        tree.add(9);
+        treeInt.add(10);
+        treeInt.add(5);
+        treeInt.add(18);
+        treeInt.add(2);
+        treeInt.add(7);
+        treeInt.add(24);
+        treeInt.add(15);
+        treeInt.add(9);
 
-        tree.printAll();
-        System.out.println(tree.root);
+        treeInt.printAll();
+        System.out.println(treeInt.root);
 
 
-        BinTree<String> list = new BinTree<String>("asdf");
-        list.add("Bendra");
-        list.add("Scharnreitner");
-        list.add("Wiedermann");
+        BinTree<String> treeString = new BinTree<String>("asdf");
+        treeString.add("Bendra");
+        treeString.add("Scharnreitner");
+        treeString.add("Wiedermann");
 
-        list.printAll();
-        System.out.println(list.root);
+        treeString.printAll();
+        System.out.println(treeString.root);
 
     }
 }
