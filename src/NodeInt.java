@@ -1,6 +1,7 @@
 public class NodeInt {
 
     int data;
+
     NodeInt left;
     NodeInt right;
 
@@ -10,17 +11,28 @@ public class NodeInt {
         this.right = null;
     }
 
-    public NodeInt insertNodeInt(int data, NodeInt parent){
+    public void insertNewNodeInt(int newData){
 
-        if(data <= parent.data) {
-            left = new NodeInt(data);
-            return left;
-        } else if(data > parent.data){
-            right = new NodeInt(data);
-            return right;
-        } else {
-            // error
-            return null;
+        // new data <= this node data --> left node
+        if(newData < this.data) {
+
+            // if left node already exists --> go into left node
+            if(left != null) {
+                left.insertNewNodeInt(newData);
+            } else {
+                left = new NodeInt(newData);
+            }
+        }
+
+        // this node data > new Data --> right node
+        else if(newData > this.data){
+
+            // if right node already exists --> go into right node
+            if(right != null) {
+                right.insertNewNodeInt(newData);
+            } else {
+                right = new NodeInt(newData);
+            }
         }
     }
 
