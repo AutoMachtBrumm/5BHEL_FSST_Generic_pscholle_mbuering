@@ -6,12 +6,12 @@ public class BinTree<T> {
         this.root = null;
     }
 
-    public BinTree(int data){
+    public BinTree(T data){
         this.root = new Node(data);
     }
 
 
-    public void add(int data){
+    public void add(T data){
         // if no tree (root) exists --> create root
         if(this.root == null){
             this.root = new Node(data);

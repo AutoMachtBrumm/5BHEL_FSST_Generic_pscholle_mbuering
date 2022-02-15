@@ -13,8 +13,16 @@ public class Main {
         tree.add(9);
 
         tree.printAll();
-
         System.out.println(tree.root);
+
+
+        BinTree<String> list = new BinTree<String>("asdf");
+        list.add("Bendra");
+        list.add("Scharnreitner");
+        list.add("Wiedermann");
+
+        list.printAll();
+        System.out.println(list.root);
 
     }
 }

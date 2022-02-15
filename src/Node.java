@@ -38,10 +38,10 @@ public class Node<T> {
 
     @Override
     public String toString() {
-        return "Node{" +
+        return "NodeInt{" +
                 "data=" + data +
-                ", left=" + left +
-                ", right=" + right +
+                ((left == null)?"":(", left=" + left)) +
+                ((right == null)?"":(", right=" + right)) +
                 '}';
     }
 }

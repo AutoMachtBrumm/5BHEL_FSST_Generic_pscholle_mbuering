@@ -12,7 +12,6 @@ public class NodeInt {
     }
 
     public void insertNewNodeInt(int newData){
-
         // new data <= this node data --> left node
         if(newData < this.data) {
 
@@ -40,8 +39,8 @@ public class NodeInt {
     public String toString() {
         return "NodeInt{" +
                 "data=" + data +
-                ", left=" + left +
-                ", right=" + right +
+                ((left == null)?"":(", left=" + left)) +
+                ((right == null)?"":(", right=" + right)) +
                 '}';
     }
 }
