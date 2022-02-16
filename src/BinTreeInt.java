@@ -1,6 +1,7 @@
 public class BinTreeInt {
 
     NodeInt root;
+    int count = 0;
 
     public BinTreeInt(){
         this.root = null;
@@ -15,11 +16,17 @@ public class BinTreeInt {
         // if no tree (root) exists --> create root
         if(this.root == null){
             this.root = new NodeInt(data);
+            count++;
             return;
+        }else if(this.root != null){
+            // add data to existing tree
+            this.root.insertNewNodeInt(data);
+            count ++;
         }
 
-        // add data to existing tree
-        this.root.insertNewNodeInt(data);
+
+
+
     }
 
     public void printAll(){
@@ -27,6 +34,10 @@ public class BinTreeInt {
         if(root != null){
             inorder(root);
         }
+    }
+
+    public void count(){
+        System.out.printf("Elemente: " + this.count);
     }
 
 

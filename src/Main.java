@@ -13,6 +13,8 @@ public class Main {
         treeInt.add(15);
         treeInt.add(9);
 
+
+
         treeInt.printAll();
         System.out.println(treeInt.root);
 
@@ -24,6 +26,8 @@ public class Main {
 
         treeString.printAll();
         System.out.println(treeString.root);
+
+        treeInt.count();
 
     }
 }
