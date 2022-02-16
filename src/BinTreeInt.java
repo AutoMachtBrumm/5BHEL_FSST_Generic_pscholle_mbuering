@@ -9,6 +9,7 @@ public class BinTreeInt {
 
     public BinTreeInt(int data){
         this.root = new NodeInt(data);
+        count++;
     }
 
 
@@ -23,10 +24,6 @@ public class BinTreeInt {
             this.root.insertNewNodeInt(data);
             count ++;
         }
-
-
-
-
     }
 
     public void printAll(){
@@ -37,7 +34,7 @@ public class BinTreeInt {
     }
 
     public void count(){
-        System.out.printf("Elemente: " + this.count);
+        System.out.println(this.count + " Elemente");
     }
 
 

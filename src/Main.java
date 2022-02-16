@@ -1,7 +1,6 @@
 public class Main {
     public static void main(String[] args){
 
-        // BinTree<Integer> tree = new BinTree<Integer>();
         BinTreeInt treeInt = new BinTreeInt();
 
         treeInt.add(10);
@@ -13,21 +12,34 @@ public class Main {
         treeInt.add(15);
         treeInt.add(9);
 
-
-
         treeInt.printAll();
+        treeInt.count();
         System.out.println(treeInt.root);
 
 
-        BinTree<String> treeString = new BinTree<String>("asdf");
+        BinTree<String> treeString = new BinTree<String>("Hugo");
         treeString.add("Bendra");
         treeString.add("Scharnreitner");
         treeString.add("Wiedermann");
 
         treeString.printAll();
-        System.out.println(treeString.root);
+        System.out.println(treeString.count() + " Elemente\n" + treeString.root);
 
-        treeInt.count();
+
+        BinTree<Schueler> treeSchueler = new BinTree<Schueler>(new Schueler("Scholla <3"));
+        treeSchueler.add(new Schueler("Marco <3"));
+        treeSchueler.add(new Schueler("Marco² <<3"));
+        treeSchueler.add(new Schueler("Marco³ <<<3"));
+
+        treeSchueler.printAll();
+        System.out.println(treeSchueler.root);
+
+        for(Schueler s:treeSchueler){
+
+            System.out.println(s);
+
+        }
+
 
     }
 }
